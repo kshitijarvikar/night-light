@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&family=Inter:wght@300&family=Sacramento&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+}
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+.container {
+    padding: 1rem;
+}
+.blue {
+    color: #7371fc;
+}
+.yellow {
+    color: #ffec51;
+}
+p {
+    font-family: 'Gluten', cursive;
+    font-size: 15px;
+    margin: 5px;
+    margin-top: 0;
+    text-align: center;
+}
+.button {
+    background-color: #FDFCA3;
+    position: relative;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 25px;
+    transition: 1s;
+    font-family: "Raleway", sans-serif;
+}
+
+.half {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: rgb(255, 213, 0);
+    pointer-events: none;
+    transition: 1s;
+}
+
+@keyframes transformToBlue {
+    0% {
+        background-color: #FDFCA3;
+    }
+
+    100% {
+        background-color: #8ABFF0;
+    }
+}
+
+@keyframes transformToYellow {
+    0% {
+        background-color: #8ABFF0;
+    }
+
+    100% {
+        background-color: #FDFCA3;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+        transform: translateX(0);
+        background-color: rgb(255, 213, 0);
+    }
+
+    100% {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #588BE4;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #588BE4;
+    }
+
+    100% {
+        left: 0;
+        transform: translateX(0);
+        background-color: rgb(255, 213, 0);
+    }
+}
